@@ -1,0 +1,13 @@
+﻿    .swagger-ui .topbar {
+        background-color: #ffffff; /* Cambia el color de fondo de la barra superior */
+    }
+    .swagger-ui .topbar-wrapper .link::before {
+        content: "";
+        background-image: url('https://fundades.org/wp-content/uploads/2020/09/logo-Fundades-web-2020.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        width: 200px;
+        height: 60px; 
+        margin-right: 10px;
+    }

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ws_api_fundades", "ws_api_fundades\ws_api_fundades.csproj", "{B5FC2C01-D94D-4CC8-95E8-28632926972C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ws_api_fundades_Business", "library_ws_api_fundades_Business\ws_api_fundades_Business.csproj", "{226BFA73-E9F9-4349-AB12-C1D3AABE8645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ws_api_fundades_Connections", "ws_api_fundades_Connections\ws_api_fundades_Connections.csproj", "{B0594C61-6A09-4108-8772-53E9FAD0FC17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ws_api_fundades_Entity", "ws_api_fundades_Entity\ws_api_fundades_Entity.csproj", "{2DFD0AEE-ADDE-4943-87AE-EAE122391617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ws_api_fundades_Services", "ws_api_fundades_Services\ws_api_fundades_Services.csproj", "{4E09AC9C-73BA-458F-AC07-74D4946E14F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ws_api_fundades_Utils", "ws_api_fundades_Utils\ws_api_fundades_Utils.csproj", "{1324483B-F210-44A1-A138-D19C23AE606B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5FC2C01-D94D-4CC8-95E8-28632926972C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5FC2C01-D94D-4CC8-95E8-28632926972C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5FC2C01-D94D-4CC8-95E8-28632926972C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5FC2C01-D94D-4CC8-95E8-28632926972C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{226BFA73-E9F9-4349-AB12-C1D3AABE8645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226BFA73-E9F9-4349-AB12-C1D3AABE8645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226BFA73-E9F9-4349-AB12-C1D3AABE8645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226BFA73-E9F9-4349-AB12-C1D3AABE8645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0594C61-6A09-4108-8772-53E9FAD0FC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0594C61-6A09-4108-8772-53E9FAD0FC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0594C61-6A09-4108-8772-53E9FAD0FC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0594C61-6A09-4108-8772-53E9FAD0FC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DFD0AEE-ADDE-4943-87AE-EAE122391617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFD0AEE-ADDE-4943-87AE-EAE122391617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DFD0AEE-ADDE-4943-87AE-EAE122391617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DFD0AEE-ADDE-4943-87AE-EAE122391617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E09AC9C-73BA-458F-AC07-74D4946E14F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E09AC9C-73BA-458F-AC07-74D4946E14F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E09AC9C-73BA-458F-AC07-74D4946E14F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E09AC9C-73BA-458F-AC07-74D4946E14F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1324483B-F210-44A1-A138-D19C23AE606B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1324483B-F210-44A1-A138-D19C23AE606B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1324483B-F210-44A1-A138-D19C23AE606B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1324483B-F210-44A1-A138-D19C23AE606B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6216396B-28A5-4AEA-A7BA-20F921AEAFAA}
+	EndGlobalSection
+EndGlobal

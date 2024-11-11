@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Fabian Proyectosss\APIS\Core8ApiPrueba\ws_api_fundades\ws_api_fundades\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-11-09T04:16:29.8780980Z;True|2024-11-08T21:06:33.3756321-05:00;True|2024-11-08T20:58:42.1636798-05:00;True|2024-11-08T12:02:08.8545873-05:00;True|2024-11-08T11:56:13.0257241-05:00;True|2024-11-08T11:40:48.5493432-05:00;True|2024-11-08T11:18:06.4762664-05:00;True|2024-11-08T11:17:18.7392467-05:00;True|2024-11-08T10:55:51.4446517-05:00;True|2024-11-08T09:05:26.1879975-05:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="wwwroot/swagger/swagger-custom.css">
+      <publishTime>10/11/2024 23:37:51</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

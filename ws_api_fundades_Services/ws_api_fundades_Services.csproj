@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\library_ws_api_fundades_Business\ws_api_fundades_Business.csproj" />
+    <ProjectReference Include="..\ws_api_fundades_Entity\ws_api_fundades_Entity.csproj" />
+  </ItemGroup>
+
+</Project>
