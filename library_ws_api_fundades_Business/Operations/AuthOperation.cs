@@ -11,9 +11,9 @@ namespace ws_api_fundades_Business.Operations
     {
         private readonly Conexion conexionBD = new Conexion();
 
-        public async Task<ModelProcedureResponse> login(ModelRequestAuth model)
+        public async Task<MPAuthResponse> login(ModelRequestAuth model)
         {
-            var response = new ModelProcedureResponse();
+            var response = new MPAuthResponse();
 
             try
             {
@@ -32,10 +32,11 @@ namespace ws_api_fundades_Business.Operations
                             {
                                 while (await dtr.ReadAsync())
                                 {
-                                    response = new ModelProcedureResponse
+                                    response = new MPAuthResponse
                                     {
                                         codigoRespuesta = dtr.GetInt32(0),
-                                        mensajeRespuesta = dtr.GetString(1)                                    
+                                        mensajeRespuesta = dtr.GetString(1)      ,
+                                        Rol = dtr.GetString(2)
                                     };
                                 }
                             }

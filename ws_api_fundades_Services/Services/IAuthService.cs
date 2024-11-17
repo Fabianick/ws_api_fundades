@@ -5,6 +5,6 @@ namespace ws_api_fundades_Services.Services
 {
     public interface IAuthService
     {
-        Task<ModelProcedureResponse> login(ModelRequestAuth model);
+        Task<MPAuthResponse> login(ModelRequestAuth model);
     }
 }

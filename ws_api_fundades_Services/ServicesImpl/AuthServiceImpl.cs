@@ -9,7 +9,7 @@ namespace ws_api_fundades_Services.ServicesImpl
     {
         private readonly AuthOperation _authO = new AuthOperation();
 
-        public async Task<ModelProcedureResponse> login(ModelRequestAuth model)
+        public async Task<MPAuthResponse> login(ModelRequestAuth model)
         {
             return await _authO.login(model);
         }

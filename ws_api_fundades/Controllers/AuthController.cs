@@ -72,7 +72,8 @@ namespace ws_api_fundades.Controllers
                 var token = GenerateJwtToken(authRequest.Username);
                 return Ok(new ModelResponseAuth
                 {
-                    Token = token
+                    Token = token,
+                    Rol = response.Rol ?? ""
                 });
             }
             catch (Exception)

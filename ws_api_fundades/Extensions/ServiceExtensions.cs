@@ -22,6 +22,7 @@ namespace ws_api_fundades.Extensions
             pIServiceCollection.AddTransient<IAuthService, AuthServiceImpl>();
             pIServiceCollection.AddTransient<IUserService, UserServiceImpl>();
             pIServiceCollection.AddTransient<ICuestionarioService, CuestionarioServiceImpl>();
+            pIServiceCollection.AddTransient<IPuestoService, PuestoServiceImpl>();
 
             //Custom Swagger
             pIServiceCollection.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerCustomExtension>();

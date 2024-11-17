@@ -65,5 +65,18 @@ namespace ws_api_fundades_Entity.Examples.ExampleRequest
                 };
             }
         }
+        
+        public class CrearPuestoRequestExample : RequestSwagger<MRCreatePuesto>
+        {
+
+            public override MRCreatePuesto GetExamples()
+            {
+                return new MRCreatePuesto
+                {
+                    NombrePuesto = "Auxiliar de limpieza",
+                    DescripcionPuesto = "Encargado de la limpieza de los pasillos, baños y oficinas."
+                };
+            }
+        }
     }
 }

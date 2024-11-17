@@ -12,7 +12,8 @@ namespace ws_api_fundades_Entity.Examples.ExampleResponse
             {
                 return new ModelResponseAuth
                 {
-                    Token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." 
+                    Token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." ,
+                    Rol = "Cliente"
                 };
             }
         }
@@ -192,6 +193,185 @@ namespace ws_api_fundades_Entity.Examples.ExampleResponse
                 {
                     codigoRespuesta = 0,
                     resultado = "Error al procesar el resultado."
+                };
+            }
+        }
+
+        public class PuestoCreateResponseExample : ResponseSwagger<ModelProcedureResponse>
+        {
+            public override ModelProcedureResponse GetExamples()
+            {
+                return new ModelProcedureResponse
+                {
+                    codigoRespuesta = 1,
+                    mensajeRespuesta = "Puesto fue creado safistactoriamente."
+                };
+            }
+        }
+
+        public class PuestoErrorRequestResponseExample : ResponseSwagger<Dictionary<string, string[]>>
+        {
+            public override Dictionary<string, string[]> GetExamples()
+            {
+                return new Dictionary<string, string[]>
+                {
+                    { "NombrePuesto", new[] { "El campo NombrePuesto es requerido." } },
+                    { "DescripcionPuesto", new[] { "El campo DescripcionPuesto es requerido." } }
+                };
+            }
+        }
+
+        public class PuestoErrorCreateResponseExample : ResponseSwagger<ModelProcedureResponse>
+        {
+            public override ModelProcedureResponse GetExamples()
+            {
+                return new ModelProcedureResponse
+                {
+                    codigoRespuesta = 0,
+                    mensajeRespuesta = "El puesto ya existe."
+                };
+            }
+        }
+
+        public class PuestoDesactivadoResponseExample : ResponseSwagger<ModelProcedureResponse>
+        {
+            public override ModelProcedureResponse GetExamples()
+            {
+                return new ModelProcedureResponse
+                {
+                    codigoRespuesta = 1,
+                    mensajeRespuesta = "Puesto fue desactivado safistactoriamente."
+                };
+            }
+        }
+
+        public class PuestoDesactivadoErrorRequestResponseExample : ResponseSwagger<Dictionary<string, string[]>>
+        {
+            public override Dictionary<string, string[]> GetExamples()
+            {
+                return new Dictionary<string, string[]>
+                {
+                    { "puesto", new[] { "El campo puesto es requerido." } },
+                };
+            }
+        }
+
+        public class PuestoDesactivadoErrorCreateResponseExample : ResponseSwagger<ModelProcedureResponse>
+        {
+            public override ModelProcedureResponse GetExamples()
+            {
+                return new ModelProcedureResponse
+                {
+                    codigoRespuesta = 0,
+                    mensajeRespuesta = "El puesto ya fue deactivado."
+                };
+            }
+        }
+
+        public class PuestoListaInactivosResponseExample : ResponseSwagger<List<MPPuestosTrabajo>>
+        {
+            public override List<MPPuestosTrabajo> GetExamples()
+            {
+                return new List<MPPuestosTrabajo>
+                {
+                   new MPPuestosTrabajo
+                   {
+                        NombrePuesto = "Auxiliar de limpieza",
+                        DescripcionPuesto = "Encargado de la limpieza de los pasillos, baños y oficinas."
+                   },
+                   new MPPuestosTrabajo
+                   {
+                        NombrePuesto = "Diseñador",
+                        DescripcionPuesto = "Encargado de diseñar las nuevas pantallas de los palicativos."
+                   }
+                };
+            }
+        }
+
+
+        public class PuestoListInactivoErrorCreateResponseExample : ResponseSwagger<List<MPPuestosTrabajo>>
+        {
+            public override List<MPPuestosTrabajo> GetExamples()
+            {
+                return new List<MPPuestosTrabajo>
+                {
+                    new MPPuestosTrabajo
+                    {
+                        NombrePuesto = "",
+                        DescripcionPuesto = ""
+                    }
+                };
+            }
+        }
+
+        public class PuestoActivadoResponseExample : ResponseSwagger<ModelProcedureResponse>
+        {
+            public override ModelProcedureResponse GetExamples()
+            {
+                return new ModelProcedureResponse
+                {
+                    codigoRespuesta = 1,
+                    mensajeRespuesta = "Puesto fue activado safistactoriamente."
+                };
+            }
+        }
+
+        public class PuestoActivadoErrorRequestResponseExample : ResponseSwagger<Dictionary<string, string[]>>
+        {
+            public override Dictionary<string, string[]> GetExamples()
+            {
+                return new Dictionary<string, string[]>
+                {
+                    { "puesto", new[] { "El campo puesto es requerido." } },
+                };
+            }
+        }
+
+        public class PuestoActivadoErrorCreateResponseExample : ResponseSwagger<ModelProcedureResponse>
+        {
+            public override ModelProcedureResponse GetExamples()
+            {
+                return new ModelProcedureResponse
+                {
+                    codigoRespuesta = 0,
+                    mensajeRespuesta = "El puesto ya se encuentra activo."
+                };
+            }
+        }
+
+        public class PuestoListaPostulantesResponseExample : ResponseSwagger<List<MPPostulantesxPuestos>>
+        {
+            public override List<MPPostulantesxPuestos> GetExamples()
+            {
+                return new List<MPPostulantesxPuestos>
+                {
+                   new MPPostulantesxPuestos
+                   {
+                        usuario = "Pepito",
+                        resultdo = "Aprobado"
+
+                   },
+                   new MPPostulantesxPuestos
+                   {
+                        usuario = "Martita",
+                        resultdo = "Desaprobado"
+                   }
+                };
+            }
+        }
+
+
+        public class PuestoListPostulantesErrorCreateResponseExample : ResponseSwagger<List<MPPostulantesxPuestos>>
+        {
+            public override List<MPPostulantesxPuestos> GetExamples()
+            {
+                return new List<MPPostulantesxPuestos>
+                {
+                    new MPPostulantesxPuestos
+                    {
+                        usuario = "",
+                        resultdo = ""
+                    }
                 };
             }
         }
