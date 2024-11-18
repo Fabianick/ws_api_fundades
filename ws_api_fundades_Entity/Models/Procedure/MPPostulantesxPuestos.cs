@@ -5,5 +5,6 @@ namespace ws_api_fundades_Entity.Models.Procedure
     {
         public required string usuario {get; set;}
         public required string resultdo { get; set; }
+        public required string email { get; set; }
     }
 }

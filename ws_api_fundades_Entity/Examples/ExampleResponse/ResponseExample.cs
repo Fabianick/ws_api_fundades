@@ -348,13 +348,16 @@ namespace ws_api_fundades_Entity.Examples.ExampleResponse
                    new MPPostulantesxPuestos
                    {
                         usuario = "Pepito",
-                        resultdo = "Aprobado"
+                        resultdo = "Aprobado",
+                        email = "pepito@gmail.com"
+                        
 
                    },
                    new MPPostulantesxPuestos
                    {
                         usuario = "Martita",
-                        resultdo = "Desaprobado"
+                        resultdo = "Desaprobado",
+                        email = "martita@gmail.com"
                    }
                 };
             }
@@ -370,7 +373,8 @@ namespace ws_api_fundades_Entity.Examples.ExampleResponse
                     new MPPostulantesxPuestos
                     {
                         usuario = "",
-                        resultdo = ""
+                        resultdo = "",
+                        email = ""
                     }
                 };
             }

@@ -192,7 +192,8 @@ namespace ws_api_fundades_Business.Operations
                                     var result = new MPPostulantesxPuestos
                                     {
                                         usuario = dtr.GetString(0),
-                                        resultdo = dtr.GetString(1)
+                                        resultdo = dtr.GetString(1),
+                                        email = dtr.GetString(2)
                                     };
                                     response.Add(result);
                                 }
